@@ -32,12 +32,3 @@ def get_dingding_logger(access_token, name=None, level=logging.WARNING):
     _logger.addHandler(BotLoggingHandler(access_token))
 
     return _logger
-
-
-if __name__ == "__main__":
-    logger = get_dingding_logger('825cf681c0f7a9db1444934cce79326b8f2a6eadb7cfef53422ee3f6c6f6f8a3')
-    logger.warning("test")
-    try:
-        1 / 0
-    except:
-        logger.exception(u"出错了")
