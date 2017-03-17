@@ -26,7 +26,7 @@ class BotLoggingHandler(logging.Handler):
             _logger.exception(u'发送消息出错')
 
 
-def get_dingding_logger(access_token, name=None, level=logging.INFO):
+def get_dingding_logger(access_token, name=None, level=logging.WARNING):
     _logger = logging.getLogger(name=name)
     _logger.setLevel(level)
     _logger.addHandler(BotLoggingHandler(access_token))
