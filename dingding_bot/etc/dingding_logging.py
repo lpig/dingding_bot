@@ -3,7 +3,7 @@
 import requests
 import logging
 
-from dingding_rot.api.bot import DingDingBot
+from dingding_bot.api.bot import DingDingBot
 
 _logger = logging.getLogger(__name__)
 

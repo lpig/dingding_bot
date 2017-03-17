@@ -5,7 +5,7 @@ from etc.dingding_logging import *
 from api.bot import DingDingBot
 
 __title__ = 'dingding_bot'
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __author__ = 'Lpig'
 __license__ = 'MIT'
 
